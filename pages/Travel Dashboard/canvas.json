@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 850,
+          "bottomRow": 820,
           "containerStyle": "none",
           "snapRows": 85,
           "parentRowSpace": 1,
@@ -122,7 +122,7 @@
               },
               "key": "vyufttgz9k",
               "isDeprecated": false,
-              "rightColumn": 33,
+              "rightColumn": 64,
               "widgetId": "mtudt5dwgy",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -149,8 +149,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 35,
-              "bottomRow": 39,
+              "topRow": 70,
+              "bottomRow": 74,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -161,7 +161,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 45,
+              "leftColumn": 22,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -171,7 +171,7 @@
               "isDisabled": false,
               "key": "w1gvhdu6w7",
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 41,
               "isDefaultClickDisabled": true,
               "widgetId": "ctpfmrijeo",
               "isVisible": true,
@@ -196,8 +196,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 0,
-              "bottomRow": 35,
+              "topRow": 35,
+              "bottomRow": 70,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -215,7 +215,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 17.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 33,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"

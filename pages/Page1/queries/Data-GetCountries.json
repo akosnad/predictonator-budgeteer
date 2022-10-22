@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetUsersOfUserCountry",
-    "fullyQualifiedName": "Data.GetUsersOfUserCountry",
+    "name": "GetCountries",
+    "fullyQualifiedName": "Data.GetCountries",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return Data.GetUsersOfCountry(Data.GetCurrentUser().Country);\n}",
+      "body": "() => {\n  return GetAllUsers.data.map(u => u.Country).filter((v, i, s) => s.indexOf(v) == i);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return Data.GetUsersOfCountry(Data.GetCurrentUser().Country);\n}"
+      "() => {\n  return GetAllUsers.data.map(u => u.Country).filter((v, i, s) => s.indexOf(v) == i);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.GetUsersOfUserCountry",
+  "id": "Page1_Data.GetCountries",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353f627dc264920d5e26d71"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353f9cff6cdb970519bfa3b"
 }
