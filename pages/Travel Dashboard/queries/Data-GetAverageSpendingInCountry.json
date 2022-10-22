@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  return Data.GetUsersOfCountry(\"Portugal\").map(u => {\n    let sum = 0;\n    u.Averages.forEach(a => sum += a.Sum);\n    return sum / u.Averages.length;\n  });\n}",
+      "body": "country => {\n  return Data.GetUsersOfCountry(\"Portugal\").map(u => {\n    let sum = 0;\n    u.Averages.forEach(a => sum += a.Sum);\n    return sum;\n  }).sort();\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  return Data.GetUsersOfCountry(\"Portugal\").map(u => {\n    let sum = 0;\n    u.Averages.forEach(a => sum += a.Sum);\n    return sum / u.Averages.length;\n  });\n}"
+      "country => {\n  return Data.GetUsersOfCountry(\"Portugal\").map(u => {\n    let sum = 0;\n    u.Averages.forEach(a => sum += a.Sum);\n    return sum;\n  }).sort();\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
