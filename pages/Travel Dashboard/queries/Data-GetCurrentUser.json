@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_Data",
+    "pageId": "Travel Dashboard",
+    "collectionId": "Travel Dashboard_Data",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.GetCurrentUser",
+  "id": "Travel Dashboard_Data.GetCurrentUser",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353e065dc264920d5e26c5a"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6354075bdc264920d5e26ede"
 }

@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -108,7 +108,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_GetAllUsers",
+  "id": "Home_GetAllUsers",
   "deleted": false,
   "gitSyncId": "6353c0894b1a8d4291236e5b_6353d28b4b1a8d4291236f28"
 }

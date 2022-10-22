@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "UpdateAll",
-    "fullyQualifiedName": "Data.UpdateAll",
+    "name": "GetUsersOfCountry",
+    "fullyQualifiedName": "Data.GetUsersOfCountry",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,16 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_Data",
+    "pageId": "Home",
+    "collectionId": "Home_Data",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await GetAllUsers.run();\n  await GetAllAverages.run();\n}",
+      "body": "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country).sort((a, b) => {\n    a.Sum > b.Sum;\n  });\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
-      "isAsync": true
+      "jsArguments": [
+        {}
+      ],
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await GetAllUsers.run();\n  await GetAllAverages.run();\n}"
+      "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country).sort((a, b) => {\n    a.Sum > b.Sum;\n  });\n}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.UpdateAll",
+  "id": "Home_Data.GetUsersOfCountry",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353e961dc264920d5e26ce3"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353f2514b1a8d42912370ca"
 }

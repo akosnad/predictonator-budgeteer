@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Travel Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -84,7 +84,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_GetAllAverages",
+  "id": "Travel Dashboard_GetAllAverages",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353d466dc264920d5e26bb0"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_635407684b1a8d4291237264"
 }

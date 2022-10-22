@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetMatchingCountryUsers",
-    "fullyQualifiedName": "Data.GetMatchingCountryUsers",
+    "name": "GetUsersAverages",
+    "fullyQualifiedName": "Data.GetUsersAverages",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,16 +13,16 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_Data",
+    "pageId": "Travel Dashboard",
+    "collectionId": "Travel Dashboard_Data",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {}",
+      "body": "() => {\n  let users = GetAllUsers.data;\n  let averages = GetAllAverages.data;\n  return users.map(u => {\n    u.Averages = averages.filter(a => a.UserId === u.Id);\n    return u;\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {}"
+      "() => {\n  let users = GetAllUsers.data;\n  let averages = GetAllAverages.data;\n  return users.map(u => {\n    u.Averages = averages.filter(a => a.UserId === u.Id);\n    return u;\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.GetMatchingCountryUsers",
+  "id": "Travel Dashboard_Data.GetUsersAverages",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353e3734b1a8d4291236ff3"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6354075bdc264920d5e26edf"
 }

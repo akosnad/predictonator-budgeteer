@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetUsersOfCountry",
-    "fullyQualifiedName": "Data.GetUsersOfCountry",
+    "name": "GetCountries",
+    "fullyQualifiedName": "Data.GetCountries",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,17 +13,15 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_Data",
+    "pageId": "Home",
+    "collectionId": "Home_Data",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country).sort((a, b) => {\n    a.Sum > b.Sum;\n  });\n}",
+      "body": "() => {\n  return GetAllUsers.data.map(u => u.Country).filter((v, i, s) => s.indexOf(v) == i);\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {}
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -36,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country).sort((a, b) => {\n    a.Sum > b.Sum;\n  });\n}"
+      "() => {\n  return GetAllUsers.data.map(u => u.Country).filter((v, i, s) => s.indexOf(v) == i);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.GetUsersOfCountry",
+  "id": "Home_Data.GetCountries",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353f2514b1a8d42912370ca"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353f9cff6cdb970519bfa3b"
 }

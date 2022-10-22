@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetUser",
-    "fullyQualifiedName": "Data.GetUser",
+    "name": "CurrentUser",
+    "fullyQualifiedName": "Data.CurrentUser",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,17 +13,15 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_Data",
+    "pageId": "Home",
+    "collectionId": "Home_Data",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "id => {\n  return Data.GetUsersAverages().find(u => u.Id === id);\n}",
+      "body": "id => {\n  return;\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {}
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -36,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "id => {\n  return Data.GetUsersAverages().find(u => u.Id === id);\n}"
+      "id => {\n  return;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.GetUser",
+  "id": "Home_Data.CurrentUser",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353dfd1dc264920d5e26c56"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353df99dc264920d5e26c51"
 }

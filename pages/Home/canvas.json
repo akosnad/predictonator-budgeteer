@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "Home",
+    "slug": "home",
     "layouts": [
       {
         "viewMode": false,
@@ -1680,7 +1680,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "Enter your  budget goal.",
+                              "text": "Enter your  budget goal",
                               "key": "49r0mduvm2",
                               "isDeprecated": false,
                               "rightColumn": 62,
@@ -2022,13 +2022,13 @@
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 340,
+                  "bottomRow": 320,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 328,
+                  "minHeight": 316,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [
@@ -2136,8 +2136,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 28,
-                      "bottomRow": 32,
+                      "topRow": 26,
+                      "bottomRow": 30,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -2179,7 +2179,7 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 8,
+                      "topRow": 9,
                       "bottomRow": 26,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
@@ -2374,13 +2374,7 @@
                               "dateFormat": "LL",
                               "dynamicPropertyPathList": [
                                 {
-                                  "key": "isRequired"
-                                },
-                                {
                                   "key": "minDate"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "displayName": "DatePicker",
@@ -2411,13 +2405,7 @@
                                   "key": "borderRadius"
                                 },
                                 {
-                                  "key": "isRequired"
-                                },
-                                {
                                   "key": "minDate"
-                                },
-                                {
-                                  "key": "isVisible"
                                 }
                               ],
                               "labelPosition": "Top",
@@ -2425,12 +2413,12 @@
                               "key": "816t4t6u9t",
                               "onDateSelected": "{{storeValue('destination',Select2.selectedOptionLabel)}}",
                               "labelTextSize": "0.875rem",
-                              "isRequired": "{{!Checkbox1.isChecked}}",
+                              "isRequired": true,
                               "isDeprecated": false,
                               "rightColumn": 31,
                               "widgetId": "khx0lb50tx",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": "{{!Checkbox1.isChecked}}",
+                              "isVisible": true,
                               "datePickerType": "DATE_PICKER",
                               "label": "Arrival",
                               "version": 2,
@@ -2541,7 +2529,7 @@
                 }
               ],
               "key": "xfcje1mz5o",
-              "height": 328,
+              "height": 316,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -3393,7 +3381,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_GetAllUsers",
+              "id": "Home_GetAllUsers",
               "name": "GetAllUsers",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
@@ -3404,14 +3392,15 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "Home",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "6353c0894b1a8d4291236e5b_6353c0894b1a8d4291236e5f"
