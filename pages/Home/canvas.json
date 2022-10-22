@@ -458,7 +458,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "{{Data.GetUserSpendingByMonth(5)}} USD",
+                              "text": "{{Data.GetUserSpendingByMonth(4).Sum}} USD",
                               "key": "wrc0z9p478",
                               "isDeprecated": false,
                               "rightColumn": 63,
@@ -765,7 +765,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "progress": "{{(Data.GetUserSpendingByMonth(4)/appsmith.store.budget)*100}}",
+                              "progress": "{{(Data.GetUserSpendingByMonth(4).Sum/appsmith.store.budget)*100}}",
                               "counterClockwise": false
                             },
                             {
@@ -2270,6 +2270,11 @@
                               "widgetName": "Button10",
                               "onClick": "{{navigateTo('Travel Dashboard', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -2545,7 +2550,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "onOptionChange": "{{storeValue('destination',Selec)}}"
+                              "onOptionChange": "{{storeValue('destination',Select2.selectedOptionLabel)}}"
                             }
                           ],
                           "key": "ee1sc9ic11",
