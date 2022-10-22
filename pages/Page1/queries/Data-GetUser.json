@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetCurrentUser",
-    "fullyQualifiedName": "Data.GetCurrentUser",
+    "name": "GetUser",
+    "fullyQualifiedName": "Data.GetUser",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,9 +19,11 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return Data.GetUser(Data.CurrentUserId());\n}",
+      "body": "id => {\n  return Data.GetUsersAverages().find(u => u.Id === id);\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
+      "jsArguments": [
+        {}
+      ],
       "isAsync": true
     },
     "executeOnLoad": false,
@@ -34,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return Data.GetUser(Data.CurrentUserId());\n}"
+      "id => {\n  return Data.GetUsersAverages().find(u => u.Id === id);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.GetCurrentUser",
+  "id": "Page1_Data.GetUser",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353e065dc264920d5e26c5a"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353dfd1dc264920d5e26c56"
 }
