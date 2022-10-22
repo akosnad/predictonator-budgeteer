@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 820,
+          "bottomRow": 810,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -38,8 +38,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 10,
-              "bottomRow": 18,
+              "topRow": 23,
+              "bottomRow": 31,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -50,7 +50,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 10,
+              "leftColumn": 24,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -60,7 +60,7 @@
               "isDisabled": false,
               "key": "av73alee9m",
               "isDeprecated": false,
-              "rightColumn": 27,
+              "rightColumn": 41,
               "isDefaultClickDisabled": true,
               "iconName": "horizontal-bar-chart-desc",
               "widgetId": "1wuof50a2u",
@@ -1524,8 +1524,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 18,
-              "bottomRow": 26,
+              "topRow": 31,
+              "bottomRow": 39,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -1536,7 +1536,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 10,
+              "leftColumn": 24,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -1546,7 +1546,7 @@
               "isDisabled": false,
               "key": "k6godcsoem",
               "isDeprecated": false,
-              "rightColumn": 27,
+              "rightColumn": 41,
               "isDefaultClickDisabled": true,
               "iconName": "arrow-right",
               "widgetId": "creuahq13r",
@@ -1979,8 +1979,8 @@
               "widgetName": "Image2",
               "displayName": "Image",
               "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
-              "topRow": 41,
-              "bottomRow": 53,
+              "topRow": 10,
+              "bottomRow": 22,
               "parentRowSpace": 10,
               "type": "IMAGE_WIDGET",
               "hideCard": false,
@@ -1988,7 +1988,7 @@
               "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
               "imageShape": "RECTANGLE",
-              "leftColumn": 15,
+              "leftColumn": 26,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -1996,9 +1996,9 @@
               ],
               "defaultImage": "https://assets.appsmith.com/widgets/default.png",
               "key": "4fwb670ies",
-              "image": "file:///C:/Users/ASUS/AppData/Local/Temp/Temp1_Wise-selected-assets.zip/wise%20(formerly%20TransferWise)/wise_ftw_blue_white_RGB.svg/",
+              "image": "",
               "isDeprecated": false,
-              "rightColumn": 27,
+              "rightColumn": 38,
               "objectFit": "cover",
               "widgetId": "h4s4uh8juo",
               "isVisible": true,
