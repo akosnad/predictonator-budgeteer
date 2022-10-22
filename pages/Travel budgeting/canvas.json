@@ -126,6 +126,7 @@
                       "widgetName": "Button1",
                       "onClick": "{{navigateTo('Travel Dashboard', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -217,6 +218,11 @@
                       "widgetName": "DatePicker1",
                       "minDate": "1920-12-31T18:30:00.000Z",
                       "dateFormat": "LL",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onDateSelected"
+                        }
+                      ],
                       "displayName": "DatePicker",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                       "searchTags": [
@@ -231,7 +237,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.53125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onDateSelected"
+                        }
+                      ],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
@@ -244,6 +254,7 @@
                       "labelPosition": "Top",
                       "isDisabled": false,
                       "key": "816t4t6u9t",
+                      "onDateSelected": "{{storeValue()}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
@@ -267,8 +278,16 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "DatePicker2",
-                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "minDate": "{{DatePicker1.selectedDate}}",
                       "dateFormat": "LL",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "minDate"
+                        },
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
                       "displayName": "DatePicker",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                       "searchTags": [
@@ -291,10 +310,16 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "minDate"
+                        },
+                        {
+                          "key": "isDisabled"
                         }
                       ],
                       "labelPosition": "Top",
-                      "isDisabled": false,
+                      "isDisabled": "{{DatePicker1.selectedDate.valid}}",
                       "key": "816t4t6u9t",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,

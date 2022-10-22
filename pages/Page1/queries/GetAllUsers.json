@@ -28,8 +28,8 @@
         },
         "pagination": {
           "data": {
-            "limit": "20",
-            "offset": "0"
+            "limit": "",
+            "offset": ""
           }
         },
         "projection": {
