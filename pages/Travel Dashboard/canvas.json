@@ -137,10 +137,10 @@
               "labelOrientation": "auto",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "yAxisName": "*Average spending in your preferred currency*",
+              "yAxisName": "Average spending in your preferred currency",
               "chartName": "Average spending based on your spending habits",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Time Interval",
+              "xAxisName": "",
               "chartType": "BAR_CHART"
             },
             {
