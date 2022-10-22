@@ -2374,7 +2374,11 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 6.0782470703125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "leftColumn": 31,
                               "dynamicBindingPathList": [
                                 {
@@ -2404,7 +2408,8 @@
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "onOptionChange": "{{storeValue('destination',Select2.selectedOptionLabel)}}"
                             }
                           ],
                           "key": "ee1sc9ic11",
