@@ -85,13 +85,13 @@
                       "parentColumnSpace": 6.84375,
                       "dynamicTriggerPathList": [],
                       "imageShape": "RECTANGLE",
-                      "leftColumn": 1,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [],
                       "defaultImage": "https://i.imgur.com/IfpFBJY.jpg",
                       "key": "3yks1spovo",
                       "image": "",
                       "isDeprecated": false,
-                      "rightColumn": 62,
+                      "rightColumn": 63,
                       "objectFit": "cover",
                       "widgetId": "pdht7bjgtl",
                       "isVisible": true,
@@ -1819,8 +1819,13 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button8",
-                              "onClick": "{{storeValue('budget',Input1.text)}}",
+                              "onClick": "{{\n(() => {storeValue('budget',Input1.text);showModal('Modal1')})()\n}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -1870,6 +1875,7 @@
                               "widgetName": "Button5",
                               "onClick": "{{showModal('Modal1')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
