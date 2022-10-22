@@ -2374,11 +2374,7 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 6.0782470703125,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onOptionChange"
-                                }
-                              ],
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 31,
                               "dynamicBindingPathList": [
                                 {
@@ -2408,8 +2404,7 @@
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "onOptionChange": "{{storeValue('destination',Select2.selectedOptionLabel)}}"
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                             }
                           ],
                           "key": "ee1sc9ic11",
@@ -2628,7 +2623,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.53125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
@@ -2642,7 +2637,7 @@
                       "text": "All Activity",
                       "key": "0rhsi3ysis",
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 34,
                       "textAlign": "LEFT",
                       "widgetId": "0zzjhagj0c",
                       "isVisible": true,
@@ -2697,7 +2692,7 @@
                         },
                         "Text15": {
                           "isVisible": true,
-                          "text": "{{List2.listData.map((currentItem) => currentItem.name)}}",
+                          "text": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'Sample transaction';\n              })();\n            })}}",
                           "fontSize": "1rem",
                           "fontStyle": "BOLD",
                           "textAlign": "LEFT",
@@ -2910,6 +2905,7 @@
                                   "widgetName": "Canvas14",
                                   "displayName": "Canvas",
                                   "topRow": 0,
+                                  "bottomRow": 370,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -3020,9 +3016,6 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "dynamicBindingPathList": [
                                         {
-                                          "key": "text"
-                                        },
-                                        {
                                           "key": "fontFamily"
                                         },
                                         {
@@ -3032,10 +3025,10 @@
                                       "leftColumn": 16,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{currentItem.name}}",
+                                      "text": "Sample transaction",
                                       "key": "0rhsi3ysis",
                                       "isDeprecated": false,
-                                      "rightColumn": 28,
+                                      "rightColumn": 49,
                                       "textAlign": "LEFT",
                                       "widgetId": "uf4gcxongg",
                                       "logBlackList": {
