@@ -3682,7 +3682,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `Chery`))(Select3.options, Select3.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 6.84375,
                       "dynamicTriggerPathList": [
@@ -3700,6 +3700,9 @@
                         },
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Left",
