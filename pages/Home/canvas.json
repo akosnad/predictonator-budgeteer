@@ -1743,7 +1743,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button5",
-                              "onClick": "{{showModal('Modal1')}}",
+                              "onClick": "{{closeModal('Modal3')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1756,11 +1756,6 @@
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
                               "leftColumn": 31,
                               "dynamicBindingPathList": [
                                 {
@@ -1770,7 +1765,7 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Back",
+                              "text": "Close",
                               "isDisabled": false,
                               "key": "k6godcsoem",
                               "isDeprecated": false,
@@ -1987,7 +1982,7 @@
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 272,
+                  "minHeight": 284,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -2011,12 +2006,12 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 0,
-                      "bottomRow": 4,
+                      "topRow": 1,
+                      "bottomRow": 5,
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "leftColumn": 58,
+                      "leftColumn": 57,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -2029,7 +2024,7 @@
                       "isDisabled": false,
                       "key": "fa0l5jrbux",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "iconName": "cross",
                       "widgetId": "b4st5kw0v9",
                       "isVisible": true,
@@ -2057,7 +2052,7 @@
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
@@ -2071,7 +2066,7 @@
                       "text": "Travel budgeting",
                       "key": "i6ybuceh6e",
                       "isDeprecated": false,
-                      "rightColumn": 41,
+                      "rightColumn": 42,
                       "textAlign": "LEFT",
                       "widgetId": "svp8kb1zcp",
                       "isVisible": true,
@@ -2456,7 +2451,7 @@
                 }
               ],
               "key": "xfcje1mz5o",
-              "height": 272,
+              "height": 284,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -2697,7 +2692,7 @@
                         },
                         "Text15": {
                           "isVisible": true,
-                          "text": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'Sample transaction';\n              })();\n            })}}",
+                          "text": "{{List2.listData.map((currentItem) => currentItem.name)}}",
                           "fontSize": "1rem",
                           "fontStyle": "BOLD",
                           "textAlign": "LEFT",
@@ -2910,7 +2905,6 @@
                                   "widgetName": "Canvas14",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 370,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -3021,6 +3015,9 @@
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "dynamicBindingPathList": [
                                         {
+                                          "key": "text"
+                                        },
+                                        {
                                           "key": "fontFamily"
                                         },
                                         {
@@ -3030,10 +3027,10 @@
                                       "leftColumn": 16,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "Sample transaction",
+                                      "text": "{{currentItem.name}}",
                                       "key": "0rhsi3ysis",
                                       "isDeprecated": false,
-                                      "rightColumn": 49,
+                                      "rightColumn": 28,
                                       "textAlign": "LEFT",
                                       "widgetId": "uf4gcxongg",
                                       "logBlackList": {
