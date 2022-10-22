@@ -278,14 +278,11 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "DatePicker2",
-                      "minDate": "{{}}",
+                      "minDate": "{{DatePicker1.selectedDate}}",
                       "dateFormat": "LL",
                       "dynamicPropertyPathList": [
                         {
                           "key": "minDate"
-                        },
-                        {
-                          "key": "isDisabled"
                         }
                       ],
                       "displayName": "DatePicker",
@@ -313,13 +310,10 @@
                         },
                         {
                           "key": "minDate"
-                        },
-                        {
-                          "key": "isDisabled"
                         }
                       ],
                       "labelPosition": "Top",
-                      "isDisabled": "{{appsmith.store.}}",
+                      "isDisabled": false,
                       "key": "816t4t6u9t",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
