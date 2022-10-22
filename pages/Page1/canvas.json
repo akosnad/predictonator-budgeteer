@@ -212,7 +212,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.4921875,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
@@ -582,7 +582,7 @@
                       "isDisabled": false,
                       "key": "8bm4mms2jm",
                       "isDeprecated": false,
-                      "rightColumn": 31,
+                      "rightColumn": 32,
                       "isDefaultClickDisabled": true,
                       "iconName": "airplane",
                       "widgetId": "ritt5j6zkh",

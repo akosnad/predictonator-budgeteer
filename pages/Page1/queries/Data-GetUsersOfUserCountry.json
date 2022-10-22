@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return Data.GetUsersOfCountry(Data.GetCurrentUser().Country).map(u => u.averages.map(u => u.Averages));\n}",
+      "body": "() => {\n  return Data.GetUsersOfCountry(Data.GetCurrentUser().Country);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return Data.GetUsersOfCountry(Data.GetCurrentUser().Country).map(u => u.averages.map(u => u.Averages));\n}"
+      "() => {\n  return Data.GetUsersOfCountry(Data.GetCurrentUser().Country);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
