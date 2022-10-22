@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return Data.GetUserSpendingByMonth(4).find(u => u.Id === Data.CurrentUserId());\n}",
+      "body": "() => {\n  return Data.GetUserSpendingByMonth();\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return Data.GetUserSpendingByMonth(4).find(u => u.Id === Data.CurrentUserId());\n}"
+      "() => {\n  return Data.GetUserSpendingByMonth();\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
