@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "UpdateAll",
-    "fullyQualifiedName": "Data.UpdateAll",
+    "name": "GetCategories",
+    "fullyQualifiedName": "Data.GetCategories",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Home",
-    "collectionId": "Home_Data",
+    "pageId": "Travel Dashboard",
+    "collectionId": "Travel Dashboard_Data",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await GetAllUsers.run();\n  await GetAllAverages.run();\n}",
+      "body": "() => {\n  return Data.GetCurrentUser().Averages.map(o => Object.keys(o))[0].filter(c => c !== \"Id\" && c !== \"UserId\" && c !== \"rowIndex\" && c !== \"Sum\" && c !== \"Month\");\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await GetAllUsers.run();\n  await GetAllAverages.run();\n}"
+      "() => {\n  return Data.GetCurrentUser().Averages.map(o => Object.keys(o))[0].filter(c => c !== \"Id\" && c !== \"UserId\" && c !== \"rowIndex\" && c !== \"Sum\" && c !== \"Month\");\n}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Home_Data.UpdateAll",
+  "id": "Travel Dashboard_Data.GetCategories",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353e961dc264920d5e26ce3"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_63541b91dc264920d5e27171"
 }

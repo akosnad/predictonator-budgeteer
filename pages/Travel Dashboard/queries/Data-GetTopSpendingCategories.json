@@ -19,9 +19,11 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {}",
+      "body": "country => {\n  let averages = Data.GetAverageSpendingCategoriesInCountry(\"Portugal\");\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
+      "jsArguments": [
+        {}
+      ],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -34,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {}"
+      "country => {\n  let averages = Data.GetAverageSpendingCategoriesInCountry(\"Portugal\");\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -43,5 +45,5 @@
   },
   "id": "Travel Dashboard_Data.GetTopSpendingCategories",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6354119a31cf9c0f4917ebc6"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_635419b3dc264920d5e27160"
 }
