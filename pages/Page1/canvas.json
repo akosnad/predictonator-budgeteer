@@ -2643,7 +2643,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "defaultCheckedState": true
+                      "defaultCheckedState": false
                     }
                   ],
                   "isDisabled": false,
