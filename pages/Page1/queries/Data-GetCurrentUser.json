@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return Data.GetUser(Data.CurrentUserId());\n}",
+      "body": "async () => {\n  return await Data.GetUser(Data.CurrentUserId());\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return Data.GetUser(Data.CurrentUserId());\n}"
+      "async () => {\n  return await Data.GetUser(Data.CurrentUserId());\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

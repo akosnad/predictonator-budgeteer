@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "CurrentUserId",
-    "fullyQualifiedName": "Data.CurrentUserId",
+    "name": "MatchingCountryUsers",
+    "fullyQualifiedName": "Data.MatchingCountryUsers",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,10 +19,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return 1;\n}",
+      "body": "async () => {\n  let curr = await Data.GetCurrentUser();\n  return (await Data.GetUsersAverages()).filter(u => u.Country === curr.Country);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return 1;\n}"
+      "async () => {\n  let curr = await Data.GetCurrentUser();\n  return (await Data.GetUsersAverages()).filter(u => u.Country === curr.Country);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.CurrentUserId",
+  "id": "Page1_Data.MatchingCountryUsers",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353defff6cdb970519bf89c"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353e3e34b1a8d4291236ff9"
 }
