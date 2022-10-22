@@ -215,11 +215,11 @@
               "chartData": {
                 "s0tgn8xpat": {
                   "seriesName": "You",
-                  "data": "[\n  {\n    \"x\": \"Travel\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Catering\",\n    \"y\": 22000\n  },\n  {\n    \"x\": \"Groceries\",\n    \"y\": 32000\n  }\n]"
+                  "data": "{{Data.GetTopSpendingCategoriesUser(appsmith.store.destination)}}"
                 },
                 "sl5538ergs": {
                   "seriesName": "People in {{appsmith.store.destination}}",
-                  "data": "[\n  {\n    \"x\":\"Travel\",\n    \"y\":25000\n  },\n  {\n    \"x\":\"Catering\",\n    \"y\":23500\n  },\n  {\n    \"x\":\"Groceries\",\n    \"y\":33670\n  }\n]"
+                  "data": "{{Data.GetTopSpendingCategoriesGraph(appsmith.store.destination)}}"
                 }
               },
               "animateLoading": true,
@@ -242,6 +242,12 @@
                 },
                 {
                   "key": "chartData.sl5538ergs.seriesName"
+                },
+                {
+                  "key": "chartData.s0tgn8xpat.data"
+                },
+                {
+                  "key": "chartData.sl5538ergs.data"
                 }
               ],
               "customFusionChartConfig": {
