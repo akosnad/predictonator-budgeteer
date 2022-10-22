@@ -16,7 +16,7 @@
   "color": "#F1DEFF",
   "icon": "bus",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "MOBILE"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"
