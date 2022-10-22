@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Data",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tasd: async () => {\n\t\tlet users = (await Users.run()).records;\n\t\tlet avg = (await Averages.run()).records;\n\t\tconsole.log(avg.map(m => m.fields.User[0]));\n\t\treturn avg.map(m => { return {\n\t\t\tid: m.fields.Id,\n\t\t\tuser: {\n\t\t\t\tid: users.find(u => u.id === m.fields.User[0].id),\n\t\t\t}\n\t\t}});\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_Data",
+  "deleted": false,
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353c38331cf9c0f4917e75c"
+}
