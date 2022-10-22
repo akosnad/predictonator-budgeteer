@@ -2022,13 +2022,13 @@
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 320,
+                  "bottomRow": 340,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 312,
+                  "minHeight": 328,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [
@@ -2136,8 +2136,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 26,
-                      "bottomRow": 30,
+                      "topRow": 28,
+                      "bottomRow": 32,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -2179,7 +2179,7 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 10,
+                      "topRow": 8,
                       "bottomRow": 26,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
@@ -2523,48 +2523,6 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                    },
-                    {
-                      "widgetName": "Checkbox1",
-                      "displayName": "Checkbox",
-                      "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
-                      "searchTags": [
-                        "boolean"
-                      ],
-                      "topRow": 5,
-                      "bottomRow": 9,
-                      "parentRowSpace": 10,
-                      "type": "CHECKBOX_WIDGET",
-                      "alignWidget": "LEFT",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 6.4921875,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "isDisabled": false,
-                      "key": "4fhp1uf70k",
-                      "isRequired": true,
-                      "isDeprecated": false,
-                      "rightColumn": 20,
-                      "widgetId": "5s7r7wpgc8",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Settle down",
-                      "version": 1,
-                      "parentId": "ucb5o0tizu",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "defaultCheckedState": false
                     }
                   ],
                   "isDisabled": false,
@@ -2583,7 +2541,7 @@
                 }
               ],
               "key": "xfcje1mz5o",
-              "height": 312,
+              "height": 328,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -2745,7 +2703,7 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 0,
+                      "topRow": 1,
                       "bottomRow": 5,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
@@ -2769,7 +2727,7 @@
                       "text": "All Activity",
                       "key": "0rhsi3ysis",
                       "isDeprecated": false,
-                      "rightColumn": 30,
+                      "rightColumn": 32,
                       "textAlign": "LEFT",
                       "widgetId": "0zzjhagj0c",
                       "isVisible": true,
@@ -3434,17 +3392,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "Page1_Data.UpdateAll",
-              "name": "Data.UpdateAll",
-              "collectionId": "Page1_Data",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await GetAllUsers.run();\n  await GetAllAverages.run();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Page1_GetAllUsers",
               "name": "GetAllUsers",
