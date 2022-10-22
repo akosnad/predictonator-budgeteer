@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "Page2",
+      "id": "Travel budgeting",
       "isDefault": false
     },
     {
@@ -16,7 +16,7 @@
   "color": "#F1DEFF",
   "icon": "bus",
   "unpublishedAppLayout": {
-    "type": "MOBILE"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "MOBILE"
