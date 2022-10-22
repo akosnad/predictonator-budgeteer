@@ -1707,8 +1707,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 12,
-                              "bottomRow": 16,
+                              "topRow": 11,
+                              "bottomRow": 15,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -2022,14 +2022,15 @@
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 320,
+                  "bottomRow": 280,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 316,
+                  "minHeight": 280,
                   "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
                   "leftColumn": 0,
                   "dynamicBindingPathList": [
                     {
@@ -2125,51 +2126,6 @@
                       "fontSize": "1.5rem"
                     },
                     {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
-                      "widgetName": "Button9",
-                      "onClick": "{{closeModal('Modal4')}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 26,
-                      "bottomRow": 30,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "leftColumn": 46,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Close",
-                      "isDisabled": false,
-                      "key": "w1gvhdu6w7",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "sa0stvtlcl",
-                      "buttonStyle": "PRIMARY",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "ucb5o0tizu",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "SECONDARY",
-                      "placement": "CENTER"
-                    },
-                    {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "borderColor": "#E0DEDE",
                       "widgetName": "Form2",
@@ -2179,7 +2135,7 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 9,
+                      "topRow": 8,
                       "bottomRow": 26,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
@@ -2374,7 +2330,13 @@
                               "dateFormat": "LL",
                               "dynamicPropertyPathList": [
                                 {
+                                  "key": "isRequired"
+                                },
+                                {
                                   "key": "minDate"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "displayName": "DatePicker",
@@ -2405,7 +2367,13 @@
                                   "key": "borderRadius"
                                 },
                                 {
+                                  "key": "isRequired"
+                                },
+                                {
                                   "key": "minDate"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "labelPosition": "Top",
@@ -2413,12 +2381,12 @@
                               "key": "816t4t6u9t",
                               "onDateSelected": "{{storeValue('destination',Select2.selectedOptionLabel)}}",
                               "labelTextSize": "0.875rem",
-                              "isRequired": true,
+                              "isRequired": "{{!Checkbox1.isChecked}}",
                               "isDeprecated": false,
                               "rightColumn": 31,
                               "widgetId": "khx0lb50tx",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
+                              "isVisible": "{{!Checkbox1.isChecked}}",
                               "datePickerType": "DATE_PICKER",
                               "label": "Arrival",
                               "version": 2,
@@ -2529,7 +2497,7 @@
                 }
               ],
               "key": "xfcje1mz5o",
-              "height": 316,
+              "height": 280,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
