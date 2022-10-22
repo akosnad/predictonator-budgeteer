@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return 18;\n}",
+      "body": "() => {\n  return 1;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return 18;\n}"
+      "() => {\n  return 1;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

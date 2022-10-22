@@ -47,7 +47,7 @@
                   "data": "[\n  {\n    \"x\": \"Weekly\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Monthly\",\n    \"y\": 22000\n  }\n]"
                 },
                 "m7za2aelxw": {
-                  "seriesName": "{{appsmith.store.destination}}",
+                  "seriesName": "In {{appsmith.store.destination}}",
                   "data": "[\n  {\n    \"x\":\"Weekly\",\n    \"y\":21000\n  },\n  {\n    \"x\":\"Monthly\",\n    \"y\":25000\n  }\n]"
                 }
               },
@@ -207,7 +207,7 @@
                   "data": "[\n  {\n    \"x\": \"Travel\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Catering\",\n    \"y\": 22000\n  },\n  {\n    \"x\": \"Groceries\",\n    \"y\": 32000\n  }\n]"
                 },
                 "sl5538ergs": {
-                  "seriesName": "{{appsmith.store.destination}}",
+                  "seriesName": "In {{appsmith.store.destination}}",
                   "data": "[\n  {\n    \"x\":\"Travel\",\n    \"y\":25000\n  },\n  {\n    \"x\":\"Catering\",\n    \"y\":23500\n  },\n  {\n    \"x\":\"Groceries\",\n    \"y\":33670\n  }\n]"
                 }
               },

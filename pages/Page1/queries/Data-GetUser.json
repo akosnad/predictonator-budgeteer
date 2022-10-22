@@ -19,12 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async id => {\n  return (await Data.GetUsersAverages()).find(u => u.Id === id);\n}",
+      "body": "id => {\n  return Data.GetUsersAverages().find(u => u.Id === id);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
       ],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async id => {\n  return (await Data.GetUsersAverages()).find(u => u.Id === id);\n}"
+      "id => {\n  return Data.GetUsersAverages().find(u => u.Id === id);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
