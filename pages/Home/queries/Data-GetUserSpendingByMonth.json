@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "month => {\n  return Data.GetUsersAverages().find(u => u.Id === Data.CurrentUserId()).Averages.find(x => x.Month == month).Sum.toLocaleString(\"en-US\");\n}",
+      "body": "month => {\n  return Data.GetUsersAverages().find(u => u.Id === Data.CurrentUserId()).Averages.find(x => x.Month == month).Sum;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "month => {\n  return Data.GetUsersAverages().find(u => u.Id === Data.CurrentUserId()).Averages.find(x => x.Month == month).Sum.toLocaleString(\"en-US\");\n}"
+      "month => {\n  return Data.GetUsersAverages().find(u => u.Id === Data.CurrentUserId()).Averages.find(x => x.Month == month).Sum;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
