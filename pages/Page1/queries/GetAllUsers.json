@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "GetAll",
+    "name": "GetAllUsers",
     "datasource": {
       "name": "Sheet_main",
       "pluginId": "google-sheets-plugin",
@@ -87,7 +87,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_GetAll",
+  "id": "Page1_GetAllUsers",
   "deleted": false,
   "gitSyncId": "6353c0894b1a8d4291236e5b_6353d28b4b1a8d4291236f28"
 }

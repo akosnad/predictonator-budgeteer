@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tGetUsersAverages: async () => {\n\t\tlet users = (await Users.run()).records;\n\t\tlet avg = (await Averages.run()).records;\n\t\treturn users.map(u => {\n\t\t\tu.fields.Averages = avg.find(m => m.id === u.fields.Averages[0]).fields;\n\t\t\treturn u.fields;\n\t\t});\n\t}\n}",
+    "body": "export default {\n\tGetUsersAverages: async () => {\n\t\tlet users = await GetAllUsers.run();\n\t\tlet averages = await GetAllAverages.run();\n\t\treturn users.map(u => {\n\t\t\tu.Averages = averages.find(a => a.UserId === u.Id);\n\t\t\treturn u;\n\t\t});\n\t}\n}",
     "variables": []
   },
   "id": "Page1_Data",
