@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetUsersOfCountry",
-    "fullyQualifiedName": "Data.GetUsersOfCountry",
+    "name": "GetUsersOfUserCountry",
+    "fullyQualifiedName": "Data.GetUsersOfUserCountry",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,11 +19,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country).sort((a, b) => {\n    a.Sum > b.Sum;\n  });\n}",
+      "body": "() => {\n  return Data.GetUsersOfCountry(Data.GetCurrentUser().Country).map(u => u.averages.map(u => u.Averages));\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {}
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -36,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country).sort((a, b) => {\n    a.Sum > b.Sum;\n  });\n}"
+      "() => {\n  return Data.GetUsersOfCountry(Data.GetCurrentUser().Country).map(u => u.averages.map(u => u.Averages));\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.GetUsersOfCountry",
+  "id": "Page1_Data.GetUsersOfUserCountry",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353f2514b1a8d42912370ca"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353f627dc264920d5e26d71"
 }
