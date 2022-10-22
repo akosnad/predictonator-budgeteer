@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 820,
+          "bottomRow": 810,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -28,7 +28,7 @@
           "children": [
             {
               "resetFormOnClick": false,
-              "boxShadow": "none",
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
               "widgetName": "Button1",
               "onClick": "{{showModal('Modal1')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -60,8 +60,9 @@
               "isDisabled": false,
               "key": "av73alee9m",
               "isDeprecated": false,
-              "rightColumn": 48,
+              "rightColumn": 27,
               "isDefaultClickDisabled": true,
+              "iconName": "horizontal-bar-chart-desc",
               "widgetId": "1wuof50a2u",
               "isVisible": true,
               "recaptchaType": "V3",
@@ -72,6 +73,7 @@
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
               "buttonVariant": "PRIMARY",
+              "iconAlign": "left",
               "placement": "CENTER"
             },
             {
@@ -1512,7 +1514,7 @@
             },
             {
               "resetFormOnClick": false,
-              "boxShadow": "none",
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
               "widgetName": "Button4",
               "onClick": "{{navigateTo('Travel budgeting', {}, 'SAME_WINDOW')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1523,7 +1525,7 @@
                 "submit"
               ],
               "topRow": 18,
-              "bottomRow": 28,
+              "bottomRow": 26,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -1538,17 +1540,15 @@
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
                 }
               ],
               "text": "Ask for preview",
               "isDisabled": false,
               "key": "k6godcsoem",
               "isDeprecated": false,
-              "rightColumn": 48,
+              "rightColumn": 27,
               "isDefaultClickDisabled": true,
+              "iconName": "arrow-right",
               "widgetId": "creuahq13r",
               "isVisible": true,
               "recaptchaType": "V3",
@@ -1557,8 +1557,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "1.5rem",
               "buttonVariant": "PRIMARY",
+              "iconAlign": "left",
               "placement": "CENTER"
             },
             {

@@ -254,7 +254,7 @@
                       "labelPosition": "Top",
                       "isDisabled": false,
                       "key": "816t4t6u9t",
-                      "onDateSelected": "{{storeValue()}}",
+                      "onDateSelected": "{{storeValue('selected',true)}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
@@ -278,7 +278,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "DatePicker2",
-                      "minDate": "{{DatePicker1.selectedDate}}",
+                      "minDate": "{{}}",
                       "dateFormat": "LL",
                       "dynamicPropertyPathList": [
                         {
@@ -319,7 +319,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "isDisabled": "{{DatePicker1.selectedDate.valid}}",
+                      "isDisabled": "{{appsmith.store.}}",
                       "key": "816t4t6u9t",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
