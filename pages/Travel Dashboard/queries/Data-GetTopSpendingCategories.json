@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "UpdateAll",
-    "fullyQualifiedName": "Data.UpdateAll",
+    "name": "GetTopSpendingCategories",
+    "fullyQualifiedName": "Data.GetTopSpendingCategories",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,12 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await GetAllUsers.run();\n  await GetAllAverages.run();\n}",
+      "body": "country => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await GetAllUsers.run();\n  await GetAllAverages.run();\n}"
+      "country => {}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Travel Dashboard_Data.UpdateAll",
+  "id": "Travel Dashboard_Data.GetTopSpendingCategories",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6354075bdc264920d5e26ee2"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6354119a31cf9c0f4917ebc6"
 }

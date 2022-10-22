@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  let averages = Data.GetUsersOfCountry(\"Portugal\").map(u => {\n    let sum = 0, n = 0;\n    u.Averages.forEach(a => {\n      if (a.Sum !== 0) {\n        sum += a.Sum;\n        n++;\n      }\n    });\n    return sum / n;\n  }).filter(s => s).sort().reverse();\n  let sum = 0;\n  averages.forEach(a => sum += a);\n  return sum / averages.length;\n}",
+      "body": "country => {\n  let averages = Data.GetUsersOfCountry(country).map(u => {\n    let sum = 0, n = 0;\n    u.Averages.forEach(a => {\n      if (a.Sum !== 0) {\n        sum += a.Sum;\n        n++;\n      }\n    });\n    return sum / n;\n  }).filter(s => s).sort().reverse();\n  let sum = 0;\n  averages.forEach(a => sum += a);\n  return Math.ceil(sum / averages.length);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  let averages = Data.GetUsersOfCountry(\"Portugal\").map(u => {\n    let sum = 0, n = 0;\n    u.Averages.forEach(a => {\n      if (a.Sum !== 0) {\n        sum += a.Sum;\n        n++;\n      }\n    });\n    return sum / n;\n  }).filter(s => s).sort().reverse();\n  let sum = 0;\n  averages.forEach(a => sum += a);\n  return sum / averages.length;\n}"
+      "country => {\n  let averages = Data.GetUsersOfCountry(country).map(u => {\n    let sum = 0, n = 0;\n    u.Averages.forEach(a => {\n      if (a.Sum !== 0) {\n        sum += a.Sum;\n        n++;\n      }\n    });\n    return sum / n;\n  }).filter(s => s).sort().reverse();\n  let sum = 0;\n  averages.forEach(a => sum += a);\n  return Math.ceil(sum / averages.length);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

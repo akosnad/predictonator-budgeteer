@@ -43,12 +43,12 @@
               "hideCard": false,
               "chartData": {
                 "edquusypin": {
-                  "seriesName": "User",
-                  "data": "[\n  {\n    \"x\": \"Weekly\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Monthly\",\n    \"y\": 22000\n  }\n]"
+                  "seriesName": "You",
+                  "data": "[\n  {\n    \"x\": \"Weekly\",\n    \"y\": {{Data.GetCurrentUserAverageSpending() / 4}}\n  },\n  {\n    \"x\": \"Monthly\",\n    \"y\": {{Data.GetCurrentUserAverageSpending()}}\n  }\n]"
                 },
                 "m7za2aelxw": {
-                  "seriesName": "In {{appsmith.store.destination}}",
-                  "data": "[\n  {\n    \"x\":\"Weekly\",\n    \"y\":21000\n  },\n  {\n    \"x\":\"Monthly\",\n    \"y\":25000\n  }\n]"
+                  "seriesName": "People in {{appsmith.store.destination}}",
+                  "data": "[\n  {\n    \"x\":\"Weekly\",\n    \"y\": {{Data.GetAverageSpendingInCountry(appsmith.store.destination) / 4}}\n  },\n  {\n    \"x\":\"Monthly\",\n    \"y\": {{Data.GetAverageSpendingInCountry(appsmith.store.destination)}}\n  }\n]"
                 }
               },
               "animateLoading": true,
@@ -71,6 +71,12 @@
                 },
                 {
                   "key": "chartData.m7za2aelxw.seriesName"
+                },
+                {
+                  "key": "chartData.m7za2aelxw.data"
+                },
+                {
+                  "key": "chartData.edquusypin.data"
                 }
               ],
               "customFusionChartConfig": {
@@ -208,11 +214,11 @@
               "hideCard": false,
               "chartData": {
                 "s0tgn8xpat": {
-                  "seriesName": "User",
+                  "seriesName": "You",
                   "data": "[\n  {\n    \"x\": \"Travel\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Catering\",\n    \"y\": 22000\n  },\n  {\n    \"x\": \"Groceries\",\n    \"y\": 32000\n  }\n]"
                 },
                 "sl5538ergs": {
-                  "seriesName": "In {{appsmith.store.destination}}",
+                  "seriesName": "People in {{appsmith.store.destination}}",
                   "data": "[\n  {\n    \"x\":\"Travel\",\n    \"y\":25000\n  },\n  {\n    \"x\":\"Catering\",\n    \"y\":23500\n  },\n  {\n    \"x\":\"Groceries\",\n    \"y\":33670\n  }\n]"
                 }
               },
@@ -304,7 +310,37 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Travel Dashboard_Data.UpdateAll",
+              "name": "Data.UpdateAll",
+              "collectionId": "Travel Dashboard_Data",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await GetAllUsers.run();\n  await GetAllAverages.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Travel Dashboard_GetAllAverages",
+              "name": "GetAllAverages",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Travel Dashboard_GetAllUsers",
+              "name": "GetAllUsers",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Travel Dashboard",
