@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country).sort((a, b) => {\n    a.Sum > b.Sum;\n  });\n}",
+      "body": "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country).sort((a, b) => {\n    a.Sum > b.Sum;\n  });\n}"
+      "country => {\n  return Data.GetUsersAverages().filter(u => u.Country === country);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
