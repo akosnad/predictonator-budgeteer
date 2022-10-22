@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let curr = await Data.GetCurrentUser();\n  return (await Data.GetUsersAverages()).filter(u => u.Country === curr.Country);\n}",
+      "body": "async () => {\n  let curr = await Data.GetCurrentUser();\n  return (await Data.GetUsersAverages()).filter(u => u.Country === curr.Country && u.Id != curr.Id);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let curr = await Data.GetCurrentUser();\n  return (await Data.GetUsersAverages()).filter(u => u.Country === curr.Country);\n}"
+      "async () => {\n  let curr = await Data.GetCurrentUser();\n  return (await Data.GetUsersAverages()).filter(u => u.Country === curr.Country && u.Id != curr.Id);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

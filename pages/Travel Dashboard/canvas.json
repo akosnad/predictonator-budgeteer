@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 860,
+          "bottomRow": 850,
           "containerStyle": "none",
           "snapRows": 85,
           "parentRowSpace": 1,
@@ -43,11 +43,11 @@
               "hideCard": false,
               "chartData": {
                 "edquusypin": {
-                  "seriesName": "Sales",
+                  "seriesName": "User",
                   "data": "[\n  {\n    \"x\": \"Weekly\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Monthly\",\n    \"y\": 22000\n  }\n]"
                 },
                 "m7za2aelxw": {
-                  "seriesName": "Average {{appsmith.store.destination}}",
+                  "seriesName": "{{appsmith.store.destination}}",
                   "data": "[\n  {\n    \"x\":\"Weekly\",\n    \"y\":21000\n  },\n  {\n    \"x\":\"Monthly\",\n    \"y\":25000\n  }\n]"
                 }
               },
@@ -122,7 +122,7 @@
               },
               "key": "vyufttgz9k",
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 33,
               "widgetId": "mtudt5dwgy",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -165,9 +165,6 @@
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
                 }
               ],
               "text": "Back to home",
@@ -184,9 +181,121 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "1.5rem",
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Chart2",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 0,
+              "bottomRow": 35,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "s0tgn8xpat": {
+                  "seriesName": "User",
+                  "data": "[\n  {\n    \"x\": \"Travel\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Catering\",\n    \"y\": 22000\n  },\n  {\n    \"x\": \"Groceries\",\n    \"y\": 32000\n  }\n]"
+                },
+                "sl5538ergs": {
+                  "seriesName": "{{appsmith.store.destination}}",
+                  "data": "[\n  {\n    \"x\":\"Travel\",\n    \"y\":25000\n  },\n  {\n    \"x\":\"Catering\",\n    \"y\":23500\n  },\n  {\n    \"x\":\"Groceries\",\n    \"y\":33670\n  }\n]"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 17.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 33,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "chartData.sl5538ergs.seriesName"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ],
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion",
+                    "alignCaptionWithCanvas": 1,
+                    "captionFontSize": "24",
+                    "captionAlignment": "center",
+                    "captionPadding": "20",
+                    "captionFontColor": "#231F20",
+                    "legendIconSides": "4",
+                    "legendIconBgAlpha": "100",
+                    "legendIconAlpha": "100",
+                    "legendPosition": "top",
+                    "canvasPadding": "0",
+                    "chartLeftMargin": "20",
+                    "chartTopMargin": "10",
+                    "chartRightMargin": "40",
+                    "chartBottomMargin": "10",
+                    "xAxisNameFontSize": "14",
+                    "labelFontSize": "12",
+                    "labelFontColor": "#716E6E",
+                    "xAxisNameFontColor": "#716E6E",
+                    "yAxisNameFontSize": "14",
+                    "yAxisValueFontSize": "12",
+                    "yAxisValueFontColor": "#716E6E",
+                    "yAxisNameFontColor": "#716E6E"
+                  }
+                }
+              },
+              "key": "kecs6s6bom",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "t1s52669vc",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "",
+              "chartName": "Top sectors",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "",
+              "chartType": "COLUMN_CHART"
             }
           ]
         },

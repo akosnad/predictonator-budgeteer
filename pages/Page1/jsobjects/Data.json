@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tCurrentUserId: () => { return 1 },\n\tGetUsersAverages: async () => {\n\t\tlet users = await GetAllUsers.run();\n\t\tlet averages = await GetAllAverages.run();\n\t\treturn users.map(u => {\n\t\t\tu.Averages = averages.filter(a => a.UserId === u.Id);\n\t\t\treturn u;\n\t\t});\n\t},\n\tGetUser: async (id) => { return (await Data.GetUsersAverages()).find(u => u.Id === id) },\n\tGetCurrentUser: async () => { return await Data.GetUser(Data.CurrentUserId()); },\n\tMatchingCountryUsers: async () => {\n\t\tlet curr = await Data.GetCurrentUser();\n\t\treturn (await Data.GetUsersAverages()).filter(u => u.Country === curr.Country);\n\t}, \n}",
+    "body": "export default {\n\tCurrentUserId: () => { return 18 },\n\tGetUsersAverages: async () => {\n\t\tlet users = await GetAllUsers.run();\n\t\tlet averages = await GetAllAverages.run();\n\t\treturn users.map(u => {\n\t\t\tu.Averages = averages.filter(a => a.UserId === u.Id);\n\t\t\treturn u;\n\t\t});\n\t},\n\tGetUser: async (id) => { return (await Data.GetUsersAverages()).find(u => u.Id === id) },\n\tGetCurrentUser: async () => { return await Data.GetUser(Data.CurrentUserId()); },\n\tMatchingCountryUsers: async () => {\n\t\tlet curr = await Data.GetCurrentUser();\n\t\treturn (await Data.GetUsersAverages()).filter(u => u.Country === curr.Country && u.Id != curr.Id);\n\t},\n}",
     "variables": []
   },
   "id": "Page1_Data",
