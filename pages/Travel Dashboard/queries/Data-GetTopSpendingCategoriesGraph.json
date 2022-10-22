@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  return Data.GetTopSpendingCategories(\"Portugal\").map(x => {\n    return {\n      x: x[1],\n      y: x[0]\n    };\n  });\n}",
+      "body": "country => {\n  return Data.GetTopSpendingCategories(country).map(x => {\n    return {\n      x: x[1],\n      y: x[0]\n    };\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  return Data.GetTopSpendingCategories(\"Portugal\").map(x => {\n    return {\n      x: x[1],\n      y: x[0]\n    };\n  });\n}"
+      "country => {\n  return Data.GetTopSpendingCategories(country).map(x => {\n    return {\n      x: x[1],\n      y: x[0]\n    };\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  let user_averages = {};\n  Data.GetCategories().forEach(c => {\n    let sum = 0, n = 0;\n    avg.forEach(a => {\n      if (a[c]) sum += a[c];\n      n++;\n    });\n    user_averages[c] = Math.ceil(sum / n);\n  });\n  return Data.GetTopSpendingCategories(\"Portugal\").map(x => {\n    return {\n      x: x[1],\n      y: user_averages[x[1]]\n    };\n  });\n}",
+      "body": "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  let user_averages = {};\n  Data.GetCategories().forEach(c => {\n    let sum = 0, n = 0;\n    avg.forEach(a => {\n      if (a[c]) sum += a[c];\n      n++;\n    });\n    user_averages[c] = Math.ceil(sum / n);\n  });\n  return Data.GetTopSpendingCategories(country).map(x => {\n    return {\n      x: x[1],\n      y: user_averages[x[1]]\n    };\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  let user_averages = {};\n  Data.GetCategories().forEach(c => {\n    let sum = 0, n = 0;\n    avg.forEach(a => {\n      if (a[c]) sum += a[c];\n      n++;\n    });\n    user_averages[c] = Math.ceil(sum / n);\n  });\n  return Data.GetTopSpendingCategories(\"Portugal\").map(x => {\n    return {\n      x: x[1],\n      y: user_averages[x[1]]\n    };\n  });\n}"
+      "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  let user_averages = {};\n  Data.GetCategories().forEach(c => {\n    let sum = 0, n = 0;\n    avg.forEach(a => {\n      if (a[c]) sum += a[c];\n      n++;\n    });\n    user_averages[c] = Math.ceil(sum / n);\n  });\n  return Data.GetTopSpendingCategories(country).map(x => {\n    return {\n      x: x[1],\n      y: user_averages[x[1]]\n    };\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
