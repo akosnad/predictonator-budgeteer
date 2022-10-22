@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  return avg;\n}",
+      "body": "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  let x = {};\n  Data.GetCategories().forEach();\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  return avg;\n}"
+      "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  let x = {};\n  Data.GetCategories().forEach();\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
