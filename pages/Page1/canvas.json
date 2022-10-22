@@ -2801,7 +2801,7 @@
               },
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "widgetName": "List2",
-              "listData": "{{(async () => { return await Data.GetCurrentUser()}}",
+              "listData": "{{(async () => { return await Data.GetCurrentUser()})}",
               "isCanvas": true,
               "displayName": "List",
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
@@ -2833,9 +2833,6 @@
                 },
                 {
                   "key": "template.Text15.text"
-                },
-                {
-                  "key": "listData"
                 }
               ],
               "gridType": "vertical",
