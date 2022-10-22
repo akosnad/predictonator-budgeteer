@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetTopSpendingCategories",
-    "fullyQualifiedName": "Data.GetTopSpendingCategories",
+    "name": "GetTopSpendingCategoriesUser",
+    "fullyQualifiedName": "Data.GetTopSpendingCategoriesUser",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  let averages = Data.GetAverageSpendingCategoriesInCountry(country);\n  let values = Object.values(averages);\n  let keys = Object.keys(averages);\n  return keys.map((k, i) => {\n    return [values[i], k];\n  }).sort().reverse().slice(0, 3);\n}",
+      "body": "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  return avg;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  let averages = Data.GetAverageSpendingCategoriesInCountry(country);\n  let values = Object.values(averages);\n  let keys = Object.keys(averages);\n  return keys.map((k, i) => {\n    return [values[i], k];\n  }).sort().reverse().slice(0, 3);\n}"
+      "country => {\n  let avg = Data.GetCurrentUser().Averages;\n  return avg;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Travel Dashboard_Data.GetTopSpendingCategories",
+  "id": "Travel Dashboard_Data.GetTopSpendingCategoriesUser",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_635419b3dc264920d5e27160"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6354567bf6cdb970519bfe8d"
 }

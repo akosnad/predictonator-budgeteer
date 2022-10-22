@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetTopSpendingCategories",
-    "fullyQualifiedName": "Data.GetTopSpendingCategories",
+    "name": "GetTopSpendingCategoriesGraph",
+    "fullyQualifiedName": "Data.GetTopSpendingCategoriesGraph",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  let averages = Data.GetAverageSpendingCategoriesInCountry(country);\n  let values = Object.values(averages);\n  let keys = Object.keys(averages);\n  return keys.map((k, i) => {\n    return [values[i], k];\n  }).sort().reverse().slice(0, 3);\n}",
+      "body": "country => {\n  return Data.GetTopSpendingCategories(\"Portugal\").map(x => {\n    return {\n      label: x[1],\n      value: x[0]\n    };\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  let averages = Data.GetAverageSpendingCategoriesInCountry(country);\n  let values = Object.values(averages);\n  let keys = Object.keys(averages);\n  return keys.map((k, i) => {\n    return [values[i], k];\n  }).sort().reverse().slice(0, 3);\n}"
+      "country => {\n  return Data.GetTopSpendingCategories(\"Portugal\").map(x => {\n    return {\n      label: x[1],\n      value: x[0]\n    };\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Travel Dashboard_Data.GetTopSpendingCategories",
+  "id": "Travel Dashboard_Data.GetTopSpendingCategoriesGraph",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_635419b3dc264920d5e27160"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_635455efdc264920d5e273ea"
 }
