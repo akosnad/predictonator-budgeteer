@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "country => {\n  return Data.GetUsersOfCountry();\n}",
+      "body": "country => {\n  return Data.GetUsersOfCountry(\"Portugal\");\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "country => {\n  return Data.GetUsersOfCountry();\n}"
+      "country => {\n  return Data.GetUsersOfCountry(\"Portugal\");\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
