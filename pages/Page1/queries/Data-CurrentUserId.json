@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "GetUsersAverages",
-    "fullyQualifiedName": "Data.GetUsersAverages",
+    "name": "CurrentUserId",
+    "fullyQualifiedName": "Data.CurrentUserId",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,12 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let users = await GetAllUsers.run();\n  let averages = await GetAllAverages.run();\n  return users.map(u => {\n    u.Averages = averages.filter(a => a.UserId === u.Id);\n    return u;\n  });\n}",
+      "body": "() => {\n  return UserSelector.selectedOptionValue;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let users = await GetAllUsers.run();\n  let averages = await GetAllAverages.run();\n  return users.map(u => {\n    u.Averages = averages.filter(a => a.UserId === u.Id);\n    return u;\n  });\n}"
+      "() => {\n  return UserSelector.selectedOptionValue;\n}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Data.GetUsersAverages",
+  "id": "Page1_Data.CurrentUserId",
   "deleted": false,
-  "gitSyncId": "6353c0894b1a8d4291236e5b_6353cde331cf9c0f4917e80c"
+  "gitSyncId": "6353c0894b1a8d4291236e5b_6353defff6cdb970519bf89c"
 }
