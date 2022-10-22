@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1030,
+          "bottomRow": 900,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -3645,13 +3645,13 @@
                       "parentColumnSpace": 6.84375,
                       "dynamicTriggerPathList": [],
                       "imageShape": "RECTANGLE",
-                      "leftColumn": 9,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [],
                       "defaultImage": "https://assets.appsmith.com/widgets/default.png",
                       "key": "vtz1o4xa4n",
                       "image": "https://images.squarespace-cdn.com/content/v1/58775efdd482e90f8535f34f/1613728292558-VRKWPOW5ZKC6BWWHCYAB/primary-small.png?format=1000w",
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 29,
                       "objectFit": "cover",
                       "widgetId": "4t32xtdfsu",
                       "isVisible": true,
@@ -3663,6 +3663,64 @@
                       "enableDownload": false,
                       "borderRadius": "1.5rem",
                       "enableRotation": false
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select3",
+                      "isFilterable": true,
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "User",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "labelWidth": "6",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.84375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 34,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "{{GetAllUsers.data.map(x => x.Name).filter((v, i, s) => s.indexOf(v) == i).map(x => {return {label: x, value: x}})}}",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "nlek0j9xer",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 61,
+                      "widgetId": "7wyl9xr99f",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "1fjzm6pm8a",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "onOptionChange": "{{storeValue('currentUser',Select3.selectedOptionValue)}}"
                     }
                   ],
                   "key": "sox6gyncmc",
